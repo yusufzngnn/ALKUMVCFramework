@@ -1,9 +1,9 @@
 <?php
 
-Router::layout('_customcss', function (){
-    Router::get('', fn () => View::render('index/home', "ALKUMVC Ana Sayfa"));
-});
-
 Router::layout('_main', function (){
-    Router::get('bs', fn () => View::render('index/home', "ALKUMVC Ana Sayfa"));
+    Router::get('', fn () => View::render('index/home', "ALKUMVC Ana Sayfa"));
+    Router::get('hakkimizda', fn () => View::render('index/about', "Hakkımızda"));
+    Router::get('iletisim', fn () => View::render('index/contact', "İletişim"));
+    Router::get('berat', fn () => View::render('index/beratogrenmekistiyor', ">Beberat"));
+
 });
